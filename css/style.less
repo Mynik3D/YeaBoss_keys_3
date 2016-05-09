@@ -3,9 +3,9 @@ body{
 	/*font-family: 'Fira Sans', 'sans-serif', 'serif';*/
 }
 .top-page{
-	height: 188px;
+	height: 90px;
 	background: #1d0a38;
-	line-height: 188px;
+	line-height: 90px;
 
 	&__call{
 		text-align: right;
@@ -15,7 +15,7 @@ body{
 		font-size: 15px;	
 	}
 	&__notice{
-		margin: 0 0 0 78px;
+		margin: 0 0 0 20px;
 	}
 }
 .carousel-inner{
@@ -37,26 +37,63 @@ body{
 }
 .consultation{
 	margin-bottom: 130px;
+
 	&__align-right{
 		float: left;
-		margin-left: 10px;
-		margin: 0 10px 0 0;
-		width: 50%;
-		height: 200px;
+		 width: 309px;
+    height: 208px;
+    -moz-transition: all 1s ease-out;
+ -o-transition: all 1s ease-out;
+ -webkit-transition: all 1s ease-out;
+	&:hover{ -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);}
 			}
+
 	&__right{
 		text-align: left;
+    width: 215px;
+    float: left;
+    margin-left: 15px;
 
 	}
 	&__align-left{
-	float: right;
-	margin: 0 30px 0 10px;
-	width: 50%;
-	height: 200px;
-	
+	width: 309px;
+    height: 208px;
+	-moz-transition: all 1s ease-out;
+ -o-transition: all 1s ease-out;
+ -webkit-transition: all 1s ease-out;
+	&:hover{ -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);}
 	}
+	&__image{
+	width: 53%;
+    height: 207px;
+    overflow: hidden;
+    border-radius: 18px;
+    float: right;
+        margin-right: 10px;
+}
+&__image-right{
+	width: 53%;
+    height: 207px;
+    overflow: hidden;
+    border-radius: 18px;
+    float: left;
+    &:hover{
+    	 top: 250px;
+   opacity: 0.9;
+    }
+
+}
+
+	
 	&__left{
-		text-align: right;
+    text-align: right;
+    width: 250px;
+    float: left;
+
 	}
 	&__width{
 		width: 100%;
@@ -79,8 +116,80 @@ body{
 		font-weight: bold;
 		font-family: "Fira Sans";
 	}
+	&__info-footer{
+		font-size: 11pt;
+		color: #000;
+		font-family: "AvenirNextCyr";
+		font-weight: normal;	
+	}
+	&__opacity{
+    position: absolute;
+    top: 212px;
+    transition: .5s;
+	}
+	&__opacityy{
+	text-transform: uppercase;
+	}
 }
+.consultation-two{
+	margin-bottom: 100px;
+}
+
+footer{
+		background: #240a42;
+		height: 50px;
+		padding: 10px 0;
+	}
+	.silver-color{
+		color: #939393;
+		font-size: 22pt;
+		font-family: "Fira Sans";
+		text-transform: uppercase;
+		font-weight: bold;
+		margin: 0;
+	}
+	.blue-color{
+		color: #03aee2;
+	}
 
 .width {
     right: 0%;
     left: 0%;}
+
+    .portfolio-box {
+    position: relative;
+  text-transform: uppercase;
+}
+
+.portfolio-box .portfolio-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+   /* background: rgba(240,95,64,.9);*/
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    position: absolute;
+    top: 93px;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+.project-category.text-faded{
+	background: #585755;
+	padding: 10px;
+	width: 315px;
+}
